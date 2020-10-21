@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] - Eben Property</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- External CSS libraries -->
+    <link type="text/css" rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/magnific-popup.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/jquery.selectBox.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/dropzone.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/rangeslider.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/leaflet.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/slick.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/slick-theme.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/map.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/css/jquery.mCustomScrollbar.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="~/assets/fonts/flaticon/font/flaticon.css">
+
+    <!-- Favicon icon -->
+    @*<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">*@
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
+
+    <!-- Custom Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="~/assets/css/style.css">
+    @*<link rel="stylesheet" type="text/css" id="style_sheet" href="~/assets/css/skins/default.css">*@
+    <link href="~/assets/css/skins/default.css" rel="stylesheet" />
+</head>
+<body id="top">
+    <div class="page_loader"></div>
+   
+    <!-- Top header start -->
+    <header class="top-header th-bg" id="top-header-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-7">
+                    <div class="list-inline">
+                        <a href="tel:0837711778"><i class="fa fa-phone"></i>0837711778</a>
+                        <a href="mailto: info@ebenproperty.co.za"><i class="fa fa-envelope"></i> info@ebenproperty.co.za</a>
+                        <a href="#" class="mr-0"><i class="fa fa-clock-o"></i>Mon - Sun: 8:00am - 6:00pm</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-5">
+                    <ul class="top-social-media pull-right">
+                        <li>
+                            <a href="#" class="sign-in"><i class="fa fa-sign-in"></i> Login </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sign-in"><i class="fa fa-user"></i> Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Top header end -->
+    <!-- main header start -->
+    <header class="main-header sticky-header" id="main-header-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light rounded">
+                        <a class="navbar-brand logo navbar-brand d-flex w-50 mr-auto" href="index.html">
+                            @*<img src="assets/img/logos/black-logo.png" alt="logo">*@
+                            <h3>EBEN PROPERTY</h3>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="navbar-collapse collapse w-100" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                        HOME
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" asp-area="" asp-controller="Services" asp-action="Index" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Services
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" asp-area="" asp-controller="Services" asp-action="PropertyInvestments">Property Investments</a>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" asp-area="" asp-controller="Services" asp-action="RentalManagement">Rental Management</a>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" asp-area="" asp-controller="Services" asp-action="PropertyMaintenance">Property Maintenance</a>
+                                        </li>
+                                        <li class="dropdown-submenu">
+                                            <a class="dropdown-item" asp-area="" asp-controller="Services" asp-action="Architecture">Architecture</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pricing" id="navbarDropdown3" role="button" aria-haspopup="true" aria-expanded="false">
+                                       Pricing
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact" id="navbarDropdown3" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Contact Us
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main header end -->
+
+            @RenderBody()
+      
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="row">
+                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
+                    <div class="footer-item">
+                        <h4>Contact Us</h4>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>19 Rooikrans road, Bloubosrand, Randburg, 2188
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i><a href="mailto:info@ebenproperty.co.za">info@ebenproperty.co.za</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i><a href="tel:0837711778">0837711778</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-skype"></i><a href="mailto:info@ebenproperty.co.za">info@ebenproperty.co.za</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
+                    <div class="footer-item">
+                        <h4>
+                            Useful Links
+                        </h4>
+                        <ul class="links">
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-angle-right"></i>Home</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="About"><i class="fa fa-angle-right"></i>About us</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Services" asp-action="Index"><i class="fa fa-angle-right"></i>Service</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Contact"><i class="fa fa-angle-right"></i>Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-7 col-md-6 col-sm-6 wow fadeInRight delay-04s">
+                    <div class="footer-item clearfix">
+                        <h4>Subscribe</h4>
+                        <div class="Subscribe-box">
+                            <p>Please enter your email below to subscribe to our newsletter.</p>
+                            <form action="#" method="GET">
+                                <p>
+                                    <input type="text" class="form-contact" name="email" placeholder="Enter Address">
+                                </p>
+                                <p>
+                                    <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                                        Subscribe
+                                    </button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <p class="copy">© @DateTime.Now.Year <a>Eben Property.</a> Developed by <a href="http://www.bytereflections.co.za" target="_blank">ByteReflections</a></p>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <ul class="social-list clearfix">
+                            <li><a href="https://www.facebook.com/Eben-Property-105014344734014" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+
+    <!-- External JS libraries -->
+    <script src="~/assets/js/jquery-2.2.0.min.js"></script>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/jquery.selectBox.js"></script>
+    <script src="~/assets/js/rangeslider.js"></script>
+    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets/js/jquery.filterizr.js"></script>
+    <script src="~/assets/js/wow.min.js"></script>
+    <script src="~/assets/js/backstretch.js"></script>
+    <script src="~/assets/js/jquery.countdown.js"></script>
+    <script src="~/assets/js/jquery.scrollUp.js"></script>
+    <script src="~/assets/js/particles.min.js"></script>
+    <script src="~/assets/js/typed.min.js"></script>
+    <script src="~/assets/js/dropzone.js"></script>
+    <script src="~/assets/js/jquery.mb.YTPlayer.js"></script>
+    <script src="~/assets/js/leaflet.js"></script>
+    <script src="~/assets/js/leaflet-providers.js"></script>
+    <script src="~/assets/js/leaflet.markercluster.js"></script>
+    <script src="~/assets/js/slick.min.js"></script>
+    <script src="~/assets/js/maps.js"></script>
+    <script src="~/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0N5pbJN10Y1oYFRd0MJ_v2g8W2QT74JE"></script>
+    <script src="~/assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- Custom JS Script -->
+    <script src="~/assets/js/app.js"></script>
+</body>
+</html>

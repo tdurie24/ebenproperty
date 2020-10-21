@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+}
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index" as>Home</a></li>
+                <li class="active">About Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub banner end -->
+<!-- About us start -->
+<div class="about-us content-area-7 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="about-carousel">
+                    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="~/assets/img/property/img-3.jpg" alt="property" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/assets/img/property/img-1.jpg" alt="property" class="img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="~/assets/img/property/img-2.jpg" alt="property" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="about-info">
+                    <h3>About Our Company</h3>
+                    <p>
+                        Based in Johannesburg, our highly effective professional team assists in removing and easing the daunting tasks that come along property investment and management.
+                    </p>
+                    <p>
+                        From providing property investment advice, structuring and rental management, through to staying abreast with the maintenance and tax affairs of your properties – we are your all-in-one property services solution. We are available to assist with planning your investment and see you grow with it.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us content-area-7 bg-white">
+            <div class="container">
+                <div class="col-lg-12">
+                    <h3>Why make use of Eben?</h3>
+                    <p>
+                        <ul>
+                            <li>
+                                Specialised know-how<br />
+                                Our team of experts and network is here to assist you in making only the best of decisions regards property investment. We are here for you – we are here to assist you make an informed decision
+                            </li>
+                            <li>
+                                Personalised advice <br />
+                                When it comes to property investment, there is no one size fits all approach. Each of our circumstances differ a lot. At <span>Eben</span>, we recognize that each plan has to be customised to your individual circumstances and goals.
+                            </li>
+                            <li>
+                                Local knowledge <br />
+                                You stand to benefit from all the experience and skill we have gained through the years in the property investment market. 
+                                Our professional team is available to assist and give you pointers on various aspects.
+                            </li>
+                            <li>
+                                Local presence <br />
+                                We pride ourselves in providing well thought advice and services in local areas that we have on the ground representation and good understanding.
+                            </li>
+                            <li>
+                                Innovation<br />
+                                At <span>Eben</span> we endeavour to make property investment hassle free by breaking the technical jargon and deploying technology that helps manage property more efficiently.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About us end -->
+<!-- Services 2 start -->
+<div class="services-2 overview-bgi">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 align-self-center wow fadeInLeft delay-04s">
+                <div class="main-title main-title-2">
+                    <h1>Our Services</h1>
+                    <p>
+                        Eben offer investors a full array of services that make property investment as easy as ABC.
+                    </p>
+                    <h2 style="color:white"><strong>Why make use of Eben?</strong></h2>
+                    <p >
+                        <ul>
+                            <li style="color:white">
+                                Specialised know-how and personalised advice
+                            </li>
+                            <li style="color:white">
+                                Local knowledge
+                            </li>
+                            <li style="color:white">
+                                Local presence
+                            </li>
+                            <li style="color:white">
+                                Innovation
+                            </li>
+                        </ul>
+                    </p>
+                    <a asp-area="" asp-controller="Home" asp-action="Contact" class="btn important-btn btn-theme btn-md">Contact us</a>
+                </div>
+            </div>
+            <div class="col-lg-7 offset-lg-1 wow fadeInRight delay-04s">
+                <div class="row">
+                    @*<div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="media services-info">
+                            <i class="flaticon-money-bag-with-dollar-symbol"></i>
+                            <div class="media-body">
+                                <h5 class="mt-0">Property Financy</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                            </div>
+                        </div>
+                    </div>*@
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="media services-info">
+                            <i class="flaticon-idea"></i>
+                            <div class="media-body">
+                                <h5 class="mt-0">Property Investment</h5>
+                                <p>
+                                    Our team of experts assist you in making the best strategy and decisions to building your property wealth
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="media services-info">
+                            <i class="flaticon-call-center-agent"></i>
+                            <div class="media-body">
+                                <h5 class="mt-0">Tax and accounting services</h5>
+                                <p>
+                                    At Eben we help you stay on top of  accounting and compliance with tax for your property investments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="media services-info">
+                            <i class="flaticon-house"></i>
+                            <div class="media-body">
+                                <h5 class="mt-0">Rental management</h5>
+                                <p>
+                                    We endeavor to ease the processes of rental property.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services 2 end -->
