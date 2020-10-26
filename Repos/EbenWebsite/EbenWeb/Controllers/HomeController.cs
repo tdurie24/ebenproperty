@@ -18,27 +18,27 @@ namespace EbenWeb.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult index()
         {
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult about()
         {
             return View();
         }
 
 
-        public IActionResult Privacy()
+        public IActionResult privacy()
         {
             return View();
         }
-        public IActionResult Pricing()
+        public IActionResult pricing()
         {
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult contact()
         {
             return View();
         }

@@ -13,22 +13,22 @@ namespace EbenWeb.Controllers
             return View();
         }
 
-        public IActionResult PropertyInvestments()
+        public IActionResult propertyinvestments()
         {
             return View();
         }
 
-        public IActionResult RentalManagement()
+        public IActionResult rentalmanagement()
         {
             return View();
         }
 
-        public IActionResult PropertyMaintenance()
+        public IActionResult propertymaintenance()
         {
             return View();
         }
 
-        public IActionResult Architecture()
+        public IActionResult architecture()
         {
             return View();
         }

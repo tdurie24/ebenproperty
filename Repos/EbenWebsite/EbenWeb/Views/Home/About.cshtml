@@ -8,10 +8,10 @@
     <div class="container">
         <div class="breadcrumb-area">
             <h1>About Us</h1>
-            <ul class="breadcrumbs">
+            @*<ul class="breadcrumbs">
                 <li><a asp-area="" asp-controller="Home" asp-action="Index" as>Home</a></li>
                 <li class="active">About Us</li>
-            </ul>
+            </ul>*@
         </div>
     </div>
 </div>
@@ -29,10 +29,10 @@
                             <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            @*<div class="carousel-item active">
                                 <img src="~/assets/img/property/img-3.jpg" alt="property" class="img-fluid">
-                            </div>
-                            <div class="carousel-item">
+                            </div>*@
+                            <div class="carousel-active">
                                 <img src="~/assets/img/property/img-1.jpg" alt="property" class="img-fluid">
                             </div>
                             <div class="carousel-item">
@@ -55,10 +55,10 @@
             </div>
         </div>
 
-        <div class="about-us content-area-7 bg-white">
+        <div class="about-us content-area-7 bg-white" style="padding-bottom: 0px;  padding-top: 0px;">
             <div class="container">
                 <div class="col-lg-12">
-                    <h3>Why make use of Eben?</h3>
+                    <h3 style="margin-top: 20px;">Why make use of Eben?</h3>
                     <p>
                         <ul>
                             <li>
@@ -94,7 +94,7 @@
 <div class="services-2 overview-bgi">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 align-self-center wow fadeInLeft delay-04s">
+            @*<div class="col-lg-4 align-self-center wow fadeInLeft delay-04s">
                 <div class="main-title main-title-2">
                     <h1>Our Services</h1>
                     <p>
@@ -119,19 +119,19 @@
                     </p>
                     <a asp-area="" asp-controller="Home" asp-action="Contact" class="btn important-btn btn-theme btn-md">Contact us</a>
                 </div>
-            </div>
-            <div class="col-lg-7 offset-lg-1 wow fadeInRight delay-04s">
+            </div>*@
+            <div class="col-lg-12 wow fadeInRight delay-04s">
                 <div class="row">
                     @*<div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="media services-info">
-                            <i class="flaticon-money-bag-with-dollar-symbol"></i>
-                            <div class="media-body">
-                                <h5 class="mt-0">Property Financy</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
-                            </div>
-                        </div>
-                    </div>*@
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="media services-info">
+                <i class="flaticon-money-bag-with-dollar-symbol"></i>
+                <div class="media-body">
+                    <h5 class="mt-0">Property Financy</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                </div>
+            </div>
+        </div>*@
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="media services-info">
                             <i class="flaticon-idea"></i>
                             <div class="media-body">
@@ -142,24 +142,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="media services-info">
-                            <i class="flaticon-call-center-agent"></i>
-                            <div class="media-body">
-                                <h5 class="mt-0">Tax and accounting services</h5>
-                                <p>
-                                    At Eben we help you stay on top of  accounting and compliance with tax for your property investments.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="media services-info">
                             <i class="flaticon-house"></i>
                             <div class="media-body">
                                 <h5 class="mt-0">Rental management</h5>
                                 <p>
                                     We endeavor to ease the processes of rental property.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="media services-info">
+                            <i class="flaticon-call-center-agent"></i>
+                            <div class="media-body">
+                                <h5 class="mt-0">Tax and accounting services</h5>
+                                <p>
+                                    At Eben we help you stay on top of  accounting and compliance with tax for your property investments.
                                 </p>
                             </div>
                         </div>

@@ -2174,7 +2174,7 @@ a {
 }
 
 .property-box-6 h3 {
-    margin: 0 0 20px;
+    margin: 0 0 0;
 }
 
 .property-box-6 p {
@@ -2349,7 +2349,7 @@ a {
 .property-box-8 .detail h3 {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .property-box-8 .detail .location {
@@ -8852,27 +8852,27 @@ body.off-canvas-sidebar-open {
     }
 
     .content-area-6 {
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
 
     .content-area-7 {
-        padding: 80px 0;
+        padding: 10px 0;
     }
 
     .content-area-8 {
-        padding-top: 80px;
+        padding-top: 10px;
     }
 
     .content-area-9 {
-        padding: 30px 0;
+        padding: 10px 0;
     }
 
     .content-area-10 {
-        padding: 80px 0 30px;
+        padding: 10px 0 30px;
     }
 
     .content-area-11 {
-        padding: 80px 0 30px;
+        padding: 10px 0 30px;
     }
 
     .content-area-12 {
@@ -8880,51 +8880,51 @@ body.off-canvas-sidebar-open {
     }
 
     .content-area-13 {
-        padding: 80px 0 30px;
+        padding: 10px 0 30px;
     }
 
     .content-area-14 {
-        padding: 80px 0 30px;
+        padding: 10px 0 30px;
     }
 
     .content-area-14 {
-        padding: 80px 0 60px;
+        padding: 10px 0 60px;
     }
 
     .content-area-15{
-        padding: 80px 0 50px;
+        padding: 10px 0 50px;
     }
 
     .content-area-16 {
-        padding: 80px 0 50px;
+        padding: 10px 0 50px;
     }
 
     .content-area-17{
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .content-area-18 {
-        padding: 80px 0 20px;
+        padding: 10px 0 20px;
     }
 
     .content-area-19{
-        padding: 80px 0 50px;
+        padding: 10px 0 50px;
     }
 
     .content-area-20 {
-        padding: 80px 0;
+        padding: 10px 0;
     }
 
     .content-area-21{
-        padding: 80px 0 50px;
+        padding: 10px 0 50px;
     }
 
     .content-area-22 {
-        padding: 80px 0 40px;
+        padding: 10px 0 40px;
     }
 
     .content-area-23 {
-        padding: 80px 0 64px;
+        padding: 10px 0 64px;
     }
 
     .btn-white {
@@ -10305,6 +10305,9 @@ body.off-canvas-sidebar-open {
         list-style-type: square;
         margin: 0;
         padding: 0;
+    }
+    span {
+        color: #ef5169;
     }
 }
 

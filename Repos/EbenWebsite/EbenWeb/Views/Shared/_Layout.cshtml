@@ -37,20 +37,23 @@
     <header class="top-header th-bg" id="top-header-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-7">
+                <div class="col-lg-7 col-md-9 col-sm-7">
                     <div class="list-inline">
                         <a href="tel:0837711778"><i class="fa fa-phone"></i>0837711778</a>
                         <a href="mailto: info@ebenproperty.co.za"><i class="fa fa-envelope"></i> info@ebenproperty.co.za</a>
-                        <a href="#" class="mr-0"><i class="fa fa-clock-o"></i>Mon - Sun: 8:00am - 6:00pm</a>
+                        <a class="mr-0"><i class="fa fa-clock-o"></i>Mon - Sun: 8:00am - 6:00pm</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-5">
+                <div class="col-lg-5 col-md-3 col-sm-5">
                     <ul class="top-social-media pull-right">
                         <li>
                             <a href="#" class="sign-in"><i class="fa fa-sign-in"></i> Login </a>
                         </li>
                         <li>
-                            <a href="#" class="sign-in"><i class="fa fa-user"></i> Register</a>
+                            <a asp-area="" asp-controller="Home" asp-action="Pricing" class="sign-in"><i class="fa fa-briefcase"></i> Get Started</a>
+                        </li>
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Contact" class="btn btn-info sign-in" role="button"> Book Consultation</a>
                         </li>
                     </ul>
                 </div>
@@ -64,7 +67,7 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg navbar-light rounded">
-                        <a class="navbar-brand logo navbar-brand d-flex w-50 mr-auto" href="index.html">
+                        <a class="navbar-brand logo navbar-brand d-flex w-50 mr-auto" asp-area="" asp-controller="Home" asp-action="Index">
                             @*<img src="assets/img/logos/black-logo.png" alt="logo">*@
                             <h3>EBEN PROPERTY</h3>
                         </a>
@@ -102,11 +105,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item dropdown">
+                                @*<li class="nav-item dropdown">
                                     <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Pricing" id="navbarDropdown3" role="button" aria-haspopup="true" aria-expanded="false">
                                        Pricing
                                     </a>
-                                </li>
+                                </li>*@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact" id="navbarDropdown3" role="button" aria-haspopup="true" aria-expanded="false">
                                         Contact Us
@@ -131,7 +134,7 @@
                 <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
                     <div class="footer-item">
                         <h4>Contact Us</h4>
-                        <ul class="contact-info">
+                        <ul class="contact-info" style ="list-style:none !important">
                             <li>
                                 <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>19 Rooikrans road, Bloubosrand, Randburg, 2188
                             </li>
@@ -142,7 +145,7 @@
                                 <i class="fa fa-phone"></i><a href="tel:0837711778">0837711778</a>
                             </li>
                             <li>
-                                <i class="fa fa-skype"></i><a href="mailto:info@ebenproperty.co.za">info@ebenproperty.co.za</a>
+                                <i class="fa fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=+27837711778&text=Hi Eben">0837711778</a>
                             </li>
                         </ul>
                     </div>
@@ -152,7 +155,7 @@
                         <h4>
                             Useful Links
                         </h4>
-                        <ul class="links">
+                        <ul style ="list-style:none !important" class="links">
                             <li>
                                 <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fa fa-angle-right"></i>Home</a>
                             </li>
@@ -163,7 +166,7 @@
                                 <a asp-area="" asp-controller="Services" asp-action="Index"><i class="fa fa-angle-right"></i>Service</a>
                             </li>
                             <li>
-                                <a asp-area="" asp-controller="Home" asp-action="Contact"><i class="fa fa-angle-right"></i>Contact Us</a>
+                                <a asp-area="" asp-controller="Home" asp-action="contact"><i class="fa fa-angle-right"></i>Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -192,12 +195,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-md-12">
-                        <p class="copy">© @DateTime.Now.Year <a>Eben Property.</a> Developed by <a href="http://www.bytereflections.co.za" target="_blank">ByteReflections</a></p>
+                        <p class="copy">© @DateTime.Now.Year <a>Eben Property.</a> Developed by <a href="https://www.bytereflections.co.za" target="_blank">ByteReflections</a></p>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <ul class="social-list clearfix">
                             <li><a href="https://www.facebook.com/Eben-Property-105014344734014" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/eben-property" target="_blank" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
