@@ -1094,7 +1094,7 @@ input[type=checkbox]:checked + label:before {
 }*/
 
 .main-header .logo img {
-    height: 40px;
+    height: 55px;
 }
 
 .main-header .logo {
@@ -4555,7 +4555,7 @@ a {
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     outline: 0;
-    color: #f6f6f6;
+    color: black;
     height: 50px;
     border-radius: 3px;
 }
@@ -10308,6 +10308,23 @@ body.off-canvas-sidebar-open {
     }
     span {
         color: #ef5169;
+    }
+
+    .contact-1 .form-control1 {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 1px solid #fff;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        outline: 0;
+        color: black;
+        height: 50px;
+        border-radius: 3px;
+    }
+
+    .spanTag {
+       color: #ef5169;
     }
 }
 

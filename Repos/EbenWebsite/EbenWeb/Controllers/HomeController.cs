@@ -28,7 +28,6 @@ namespace EbenWeb.Controllers
             return View();
         }
 
-
         public IActionResult privacy()
         {
             return View();
@@ -39,6 +38,15 @@ namespace EbenWeb.Controllers
         }
 
         public IActionResult contact()
+        {
+            var model = new Contact();
+            model.Option = "US";
+            model.Service = "SE";
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult contact([FromBody] Contact contact)
         {
             return View();
         }
