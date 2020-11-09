@@ -46,10 +46,17 @@ namespace EbenWeb.Controllers
         }
 
         [HttpPost]
-        public IActionResult contact([FromBody] Contact contact)
+        public IActionResult contact([FromForm] Contact contact)
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult contacts()
+        {
+            return View();
+        }
+
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
