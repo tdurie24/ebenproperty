@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using EbenWeb.Models;
+using Eben.Business.Contracts;
+using Eben.Business.Models;
+using Eben.Business.Services;
 
 namespace EbenWeb.Controllers
 {
@@ -40,21 +43,54 @@ namespace EbenWeb.Controllers
         public IActionResult contact()
         {
             var model = new Contact();
-            model.Option = "US";
+            // model.Option = "US";
             model.Service = "SE";
             return View(model);
         }
 
         [HttpPost]
-        public IActionResult contact([FromForm] Contact contact)
+        public virtual JsonResult contact(Contact co)
         {
-            return View();
+            //public string Service { get; set; }
+            var contact = new ContactModel()
+            {
+                Name = co.Name,
+                Email = co.Email,
+                Phone = co.Phone,
+                Message = co.Message
+            }; 
+            switch (co.Service)
+            {
+                case "SE":
+                    contact.Service = "Accounting and Tax returns";
+                    break;
+                case "AX":
+                    contact.Service = "Rental management";
+                    break;
+                case "PM":
+                    contact.Service = "Property maintenance";
+                    break;
+                default:
+                    contact.Service = "No particular service";
+                    break;
+            }
+            var emailServ = new EmailService();
+            emailServ.SendEmail(contact);
+            return Json(true);
         }
 
         [HttpPost]
-        public IActionResult contacts()
+        public virtual JsonResult subscribe(Contact co)
         {
-            return View();
+            var contact = new ContactModel()
+            {
+                Name = co.Email,
+                Email = co.Email,
+                Message = "Email for new subscriber: " + co.Email
+            };
+            var emailServ = new EmailService();
+            emailServ.SendEmail(contact);
+            return Json(true);
         }
 
 
