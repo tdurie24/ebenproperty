@@ -64,16 +64,17 @@ namespace EbenWeb.Controllers
                 Email = co.Email,
                 Phone = co.Phone,
                 Message = body.ToString()
-                }; 
+                };
+
             switch (co.Service)
             {
                 case "IA":
                     contact.Service = "Investment Advice";
                     break;
-                case "SE":
+                case "AX":
                     contact.Service = "Accounting and Tax returns";
                     break;
-                case "AX":
+                case "RM":
                     contact.Service = "Rental management";
                     break;
                 case "PM":
