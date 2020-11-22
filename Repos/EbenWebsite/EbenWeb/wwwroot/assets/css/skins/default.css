@@ -26,28 +26,28 @@
     background: #2339d6;
 }
 
-.contact-3 .contact-info .ci-box .icon i{
-    color: #2339d6;
+.contact-3 .contact-info .ci-box .icon i {
+    color: #ef5169;
 }
 
-.plan-price{
-    color: #2339d6;
+.plan-price {
+    color: #ef5169;
 }
 
-.contact-2 .contact-info i{
-    color: #2339d6;
+.contact-2 .contact-info i {
+    color: #ef5169;
 }
 
 .contact-1 .contact-info .ci-box .icon i {
-    color: #2339d6;
+    color: #ef5169;
 }
 
 #search-area-5 {
-    background: #2339d6;
+    background: #ef5169;
 }
 
-.banner .meta ul li i{
-    color: #2339d6;
+.banner .meta ul li i {
+    color: #ef5169;
 }
 
 .main-header .bg-active{
@@ -631,7 +631,7 @@ li.active.btn.filtr-button.filtr {
     }
 
     .navbar-light .navbar-toggler {
-        background: #2339d6;
+        background: #ef5169;
         color: #fff;
     }
 

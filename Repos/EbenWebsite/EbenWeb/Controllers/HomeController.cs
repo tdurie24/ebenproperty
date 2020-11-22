@@ -9,6 +9,7 @@ using EbenWeb.Models;
 using Eben.Business.Contracts;
 using Eben.Business.Models;
 using Eben.Business.Services;
+using System.Text;
 
 namespace EbenWeb.Controllers
 {
@@ -51,16 +52,24 @@ namespace EbenWeb.Controllers
         [HttpPost]
         public virtual JsonResult contact(Contact co)
         {
+            StringBuilder body = new StringBuilder();
+            body.Append("Name: " + co.Name);
+            body.Append(Environment.NewLine + "Mobile Number: " + co.Phone);
+            body.Append(Environment.NewLine + "Email: " + co.Email);
+            body.Append(Environment.NewLine + "Message: " + co.Message);
             //public string Service { get; set; }
             var contact = new ContactModel()
             {
                 Name = co.Name,
                 Email = co.Email,
                 Phone = co.Phone,
-                Message = co.Message
-            }; 
+                Message = body.ToString()
+                }; 
             switch (co.Service)
             {
+                case "IA":
+                    contact.Service = "Investment Advice";
+                    break;
                 case "SE":
                     contact.Service = "Accounting and Tax returns";
                     break;
@@ -76,6 +85,7 @@ namespace EbenWeb.Controllers
             }
             var emailServ = new EmailService();
             emailServ.SendEmail(contact);
+            
             return Json(true);
         }
 

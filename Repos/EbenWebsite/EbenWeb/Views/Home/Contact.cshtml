@@ -66,7 +66,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="send-btn">
-                                <button type="submit" onclick="SendMessage()" class="btn btn-color btn-md btn-info">Subscribe</button>
+                                <button type="submit" name="submitMessage" onclick="SendEmail()" role="button" class="btn btn-info sign-in">Send Message</button>
+
                             </div>
                         </div>
                     </div>
@@ -116,9 +117,9 @@
     </div>*@
 <!-- Google map end -->
 
-<script>
-    function SendMessage() {
-        var ContactModel = {
+<script type="text/javascript">
+    function SendEmail() {
+ var ContactModel = {
             Name: $("#Name").val()
             , Email: $("#Email").val()
             , Phone: $("#Phone").val()
@@ -130,10 +131,12 @@
             alert("Message has been successfully sent!");
         });
 
-        setValue("Name", "");
-        setValue("Email", "");
-        setValue("Phone", "");
-        setValue("Service", "");
-        setValue("Message", "");
+        $("#Name").val('');
+        $("#Email").val('');
+        $("#Phone").val('');
+        $("#Service").val('');
+        $("#Message").val('');
+        
+
     }
 </script>

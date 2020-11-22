@@ -12,6 +12,7 @@ namespace EbenWeb.Models
         public List<SelectListItem> Services { get; } = new List<SelectListItem>
         {
             new SelectListItem { Value = "SE", Text = "What services do you require"  },
+            new SelectListItem {Value = "IA", Text= "Investment Advice"},
             new SelectListItem { Value = "AX", Text = "Accounting and Tax returns" },
             new SelectListItem { Value = "RM", Text = "Rental management" },
              new SelectListItem { Value = "PM", Text = "Property maintenance" },
